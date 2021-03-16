@@ -16,7 +16,6 @@ _printf
 .B _printf
 The functions in _printf() writes output according to a format.
 
-
 .SH Format
 .TP
 .BR c
@@ -34,7 +33,6 @@ The const char * argument is expected to be a pointer to an array of character t
 .B d, i
 The int argument is converted to signed decimal.
 
-
 .TP
 .B r
 Prints a string in reverse.
@@ -48,14 +46,9 @@ Prints a string converted to rot13.
 A '%' is written but no argument is converted. The complete version specification is '%%'.
 
 
-
 .B Return Value
 In case of success _printf returns an integer value, wich is the total number of printed characters.
 Otherwise, _printf returns -1 (error).
-
-
-.SH BUGS
-No known bugs until this moment.
 
 .SH NOTES
 Actualy, the program don't handle the flag characters, field width, precision nor the length modifiers.
@@ -67,7 +60,6 @@ Actualy, the program don't handle the flag characters, field width, precision no
 .SH CREDITS
 .PP
 This man page is created as a project to recreate the C standard ibrary pintf for Holberton school.
-
 <https://www.holbertonschool.com/tn/en>
 
 .SH AUTHORS
