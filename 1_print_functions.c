@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_character - print a char
+ * print_character - print a character
  * @arg: argument of type va_list
  * Return: always 1
  */
