@@ -14,7 +14,7 @@ int print_character(va_list arg)
 }
 /**
  *print_string - print a string
- *@arg: argument of type va_list
+ *@arg: argument of type of va_list
  * Return: len
  */
 int print_string(va_list arg)
