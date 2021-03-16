@@ -114,4 +114,4 @@ Brian W. Kernighan  and Dennis M. Ritchie
 
 
 
-###### Project made for [Holberton school](https://www.holbertonschool.com/tn/en/ "Holberton school") by **Maroua Alaya** and** Rim Joudi**.
+###### Project made for [Holberton school](https://www.holbertonschool.com/tn/en/ "Holberton school") by **Maroua Alaya** and ** Rim Joudi**.
