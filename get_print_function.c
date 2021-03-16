@@ -16,6 +16,7 @@ int check_char_func(const char s, va_list ap)
 		{'i', print_integer},
 		{'b', print_binary},
 		{'r', print_rev_string},
+		{'R', print_rot13},
 		{0, NULL}
 	};
 	while (ch[i].c != 0)
