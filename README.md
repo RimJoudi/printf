@@ -38,7 +38,7 @@ To use the _printf function you simply need to compile all files .c including th
 		     _printf("let's print something using our function!");
 
        return (0);
-	       }
+	    }
 
 ###### Compilation:
 
@@ -80,20 +80,20 @@ Brian W. Kernighan  and Dennis M. Ritchie
 |File   | Description  |
 | :------------: | :------------: |
 | holberton.h  |  Header file contains all the prototypes|
-| 1-print_functions.c  | Contain functions for (c, s, %) |
-| 2-print_functions.c  | Contain functions for (r, i, d, R, b) |
+| 1_print_functions.c  | Contain functions for (c, s, %) |
+| 2_print_functions.c  | Contain functions for (r, i, d, R, b) |
 | _putchar.c |  Contain the putchar function |
 | _new_line_fun.c  | Contain the function to print a new line  |
-| get_print_function.c | Contains functions Format_specifiers |
+| get_print_function.c | Contains functions format specifiers |
 | _print_fun.c | The _printf function |
 
 
 
 ### Authors
 
-* **Maroua Alaya ** - (https://github.com/maroua199525)
+* Maroua Alaya  - (https://github.com/maroua199525)
 
-* **Rim Joudi ** - (https://github.com/RimJoudi)
+* Rim Joudi  - (https://github.com/RimJoudi)
 
 
 
@@ -108,10 +108,7 @@ Brian W. Kernighan  and Dennis M. Ritchie
 
 
 
-[========]
 
 
 
-
-
-###### Project made for [Holberton school](https://www.holbertonschool.com/tn/en/ "Holberton school") by **Maroua Alaya** and ** Rim Joudi**.
+###### Project made for [Holberton school](https://www.holbertonschool.com/tn/en/ "Holberton school") by **Maroua Alaya** and  Rim Joudi.
