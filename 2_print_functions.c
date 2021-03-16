@@ -61,7 +61,7 @@ int print_integer(va_list arg)
  */
 int print_rot13(va_list arg)
 {
-	char *str = va_arg(arg, char*);
+	char *str;
 	int i, j;
 	char ch1[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
 	char ch2[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
