@@ -66,6 +66,8 @@ int print_rot13(va_list arg)
 	char ch1[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
 	char ch2[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
 
+	if (str == NULL)
+		str = "(ahyy)";
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -74,14 +76,19 @@ int print_rot13(va_list arg)
 			if (str[i] == ch1[j])
 			{
 				str[i] = ch2[j];
-				break;
 				_putchar(str[i]);
 				count++;
+				break;
 			}
 		}
 		i++;
 	}
-	return (i);
+	if (str[i] != ch1[j])
+	{
+		_putchar(str[i]);
+		count++;
+	}
+	return (count);
 }
 int binary(unsigned int n);
 /**
