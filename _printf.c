@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _printf - print all (printf recreation)
+ * _printf - print all (printf reecreation)
  * @format: format specifier
  * Return: count
  */
