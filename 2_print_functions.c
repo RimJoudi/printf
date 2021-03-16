@@ -70,7 +70,7 @@ int print_rot13(va_list arg)
 	if (str == NULL)
 	{
 		str = "(ahyy)";
-		return (-1);
+	
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
