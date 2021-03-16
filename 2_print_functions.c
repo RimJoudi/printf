@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *print_rev_string - print reverse string
+ * print_rev_string - print reverse string
  *@arg: argument of type va_list
- * Return :count
+ * Return: count
  */
 int print_rev_string(va_list arg)
 {
@@ -13,22 +13,22 @@ int print_rev_string(va_list arg)
 	if (str == NULL)
 		str = "(llun(";
 	while (str[i] != '\0')
-		{
-			i++;
-		}
+	{
+		i++;
+	}
 	len = i - 1;
 	while (len >= 0)
-		{
-			_putchar(str[len]);
-			len--;
-			count++;
-		}
+	{
+		_putchar(str[len]);
+		len--;
+		count++;
+	}
 	return (count);
 }
 /**
  * print_integer -print number putchar
  * @arg: argument of type va_list
- * Return: count; 
+ * Return: count
  */
 int print_integer(va_list arg)
 {
@@ -38,22 +38,22 @@ int print_integer(va_list arg)
 
 	x = n;
 	if (n < 0)
-		{
-			_putchar('-');
-			x = -x;
-			count++;
-		}
+	{
+		_putchar('-');
+		x = -x;
+		count++;
+	}
 	while ((x / rest) > 9)
-		{
-			rest = rest * 10;
-		}
+	{
+		rest = rest * 10;
+	}
 	while (rest > 0)
-		{
-			_putchar(x / rest + '0');
-			x = (x % rest);
-			rest = rest / 10;
-			count++;
-		}
+	{
+		_putchar(x / rest + '0');
+		x = (x % rest);
+		rest = rest / 10;
+		count++;
+	}
 	return (count);
 }
 /**
@@ -70,18 +70,18 @@ int print_rot13(va_list arg)
 
 	i = 0;
 	while (str[i] != '\0')
+	{
+		for (j = 0; j < 52; j++)
 		{
-			for (j = 0; j < 52; j++)
-				{
-					if (str[i] == ch1[j])
-						{
-							str[i] = ch2[j];
-							_putchar(str[i]);
-							break;
-						}
-				}
-			i++;
+			if (str[i] == ch1[j])
+			{
+				str[i] = ch2[j];
+				_putchar(str[i]);
+				break;
+			}
 		}
+		i++;
+	}
 	return (i);
 }
 int binary(unsigned int n);
@@ -93,13 +93,14 @@ int binary(unsigned int n);
 int print_binary(va_list arg)
 {
 	unsigned int x, m;
+
 	x = va_arg(arg, int);
 	m = binary(x);
-	return(m);
+	return (m);
 }
 /**
  * binary - print binary
- * @arg: argument of type va_list
+ * @n: unsigned int
  * Return: count
  */
 int binary(unsigned int n)
@@ -107,9 +108,9 @@ int binary(unsigned int n)
 	int count = 0;
 
 	if ((n / 2) > 0)
-		{
-			count = 1 + binary(n / 2);
-		}
+	{
+		count = 1 + binary(n / 2);
+	}
 	putchar('0' + (n % 2));
 	return (count);
 }
