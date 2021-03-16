@@ -69,6 +69,7 @@ int print_rot13(va_list arg)
 	str = va_arg(arg, char *);
 	if (str == NULL)
 	{
+		str = "(ahyy)";
 		return (-1);
 	}
 	for (i = 0; str[i] != '\0'; i++)
