@@ -12,10 +12,8 @@ int print_rev_string(va_list arg)
 	str = va_arg(arg, char*);
 	if (str == NULL)
 		str = "(llun(";
-	while (str[i] != '\0')
-	{
-		i++;
-	}
+	for (i = 0; str[i]; i++)
+		;
 	len = i - 1;
 	while (len >= 0)
 	{
@@ -63,8 +61,8 @@ int print_integer(va_list arg)
  */
 int print_rot13(va_list arg)
 {
-	char *str = va_arg(arg, int);
-	int i, j;
+	char *str = va_arg(arg, char*);
+	int i, j, count = 0;
 	char ch1[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
 	char ch2[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
 
@@ -76,8 +74,9 @@ int print_rot13(va_list arg)
 			if (str[i] == ch1[j])
 			{
 				str[i] = ch2[j];
-				_putchar(str[i]);
 				break;
+				_putchar(str[i]);
+				count++;
 			}
 		}
 		i++;
