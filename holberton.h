@@ -14,7 +14,7 @@ typedef struct printf
 	char c;
 	int (*fun)(va_list);
 } printf_t;
-/* functions prototypes */
+/* functions prototype */
 int check_char_func(const char s, va_list ap);
 int _printf(const char *format, ...);
 int _putchar(char c);
