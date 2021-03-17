@@ -76,7 +76,7 @@ int print_rot13(va_list arg)
 	{
 		for (j = 0; j <= 52; j++)
 		{
-			if (str[i] == ch1[i])
+			if (str[i] == ch1[j])
 			{
 				_putchar(ch2[j]);
 				break;
