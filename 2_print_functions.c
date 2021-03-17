@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * print_rev_string - print reverse string
  *@arg: argument of type va_list
