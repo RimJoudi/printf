@@ -14,7 +14,7 @@ int print_rev_string(va_list arg)
 		str = "(llun(";
 	for (i = 0; str[i]; i++)
 		;
-	len = i - 1;
+	len = i;
 	while (len >= 0)
 	{
 		_putchar(str[len]);
@@ -70,7 +70,6 @@ int print_rot13(va_list arg)
 	if (str == NULL)
 	{
 		str = "(ahyy)";
-	
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
