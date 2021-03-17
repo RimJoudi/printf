@@ -14,7 +14,7 @@ int print_rev_string(va_list arg)
 		str = "(llun(";
 	for (i = 0; str[i]; i++)
 		;
-	len = i;
+	len = i - 1;
 	while (len >= 0)
 	{
 		_putchar(str[len]);
