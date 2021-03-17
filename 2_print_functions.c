@@ -76,7 +76,7 @@ int print_rot13(va_list arg)
 	{
 		for (j = 0; j <= 52; j++)
 		{
-			if (str[i] == ch1[j])
+			if (str[i] == ch1[i])
 			{
 				_putchar(ch2[j]);
 				break;
@@ -114,6 +114,6 @@ int binary(unsigned int n)
 	{
 		count = 1 + binary(n / 2);
 	}
-	putchar('0' + (n % 2));
+	_putchar('0' + (n % 2));
 	return (count);
 }
