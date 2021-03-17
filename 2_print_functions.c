@@ -114,6 +114,6 @@ int binary(unsigned int n)
 	{
 		count = 1 + binary(n / 2);
 	}
-	putchar('0' + (n % 2));
+	_putchar('0' + (n % 2));
 	return (count);
 }
