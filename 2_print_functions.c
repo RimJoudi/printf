@@ -12,8 +12,6 @@ int print_rev_string(va_list arg)
 	str = va_arg(arg, char*);
 	if (str == NULL)
 		str = "(llun(";
-	if (str = "")
-		count = 0;
 	for (i = 0; str[i]; i++)
 		;
 	len = i - 1;
