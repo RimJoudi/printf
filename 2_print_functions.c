@@ -62,30 +62,32 @@ int print_integer(va_list arg)
 int print_rot13(va_list arg)
 {
 	char *str;
-	int i, j;
+	int i, j, k;
 	char ch1[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
 	char ch2[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
 
+	k = 0;
 	str = va_arg(arg, char *);
 	if (str == NULL)
 	{
 		str = "(ahyy)";
 	}
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i]; i++)
 	{
-		for (j = 0; j <= 52; j++)
+		for (j = 0; ch1[j]; j++)
 		{
 			if (str[i] == ch1[j])
 			{
 				_putchar(ch2[j]);
+				k++;
 				break;
 			}
 		}
-		if (ch1[j] != '\0')
+		if (!ch1[j])
 		_putchar(str[i]);
-		i++;
+		k++;
 	}
-	return (i);
+	return (k);
 }
 int binary(unsigned int n);
 /**
