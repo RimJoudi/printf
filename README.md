@@ -85,7 +85,7 @@ Brian W. Kernighan  and Dennis M. Ritchie
 | _putchar.c |  Contain the putchar function |
 | _new_line_fun.c  | Contain the function to print a new line  |
 | get_print_function.c | Contains functions format specifiers |
-| _print_fun.c | The _printf function |
+| _printf.c | The _printf function |
 
 
 
