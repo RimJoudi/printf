@@ -70,7 +70,7 @@ int print_rot13(va_list arg)
 	if (str == NULL)
 	{
 		str = "(ahyy)";
-	
+
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -82,8 +82,9 @@ int print_rot13(va_list arg)
 				break;
 			}
 		}
-		if (j == 53)
+		if (ch1[j] != '\0')
 		_putchar(str[i]);
+		i++;
 	}
 	return (i);
 }
