@@ -32,6 +32,11 @@ int print_string(va_list arg)
 	}
 	return (len);
 }
+/**
+ *print_percent - print percent
+ *@arg: argument of type of va_list
+ * Return: integer
+ */
 int print_percent(va_list arg)
 {
 	(void)arg;
