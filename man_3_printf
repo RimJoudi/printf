@@ -1,9 +1,6 @@
-.TH man 3 _printf  "16 mars 2021""_printf man page"
-
+.TH man 3 "16 mars 2021" "0.10" "_printf man page"
 .Sh NAME
-_printf
-
-.B  _printf
+.B _printf
 - Formatted output conversion recreated printf C standard library function.
 
 .SH SYNOPSIS
