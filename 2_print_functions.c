@@ -70,10 +70,6 @@ int print_rot13(va_list arg)
 	if (str == NULL)
 	{
 		str = "(ahyy)";
-<<<<<<< HEAD
-
-=======
->>>>>>> 77ba108a12c16daeaa9d566f25182f230ef17f64
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
