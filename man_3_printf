@@ -1,4 +1,4 @@
-.TH  _printf  "16 mars 2021""_printf man page"
+.TH man 3 _printf  "16 mars 2021""_printf man page"
 
 .Sh NAME
 _printf
@@ -45,8 +45,26 @@ Prints a string converted to rot13.
 .B %
 A '%' is written but no argument is converted. The complete version specification is '%%'.
 
+.SH Example:
+To use the _printf function you simply need to compile all files .c including the header holberton.h with a main function.
 
-.B Return Value
+.B main.c
+#include "holberton.h"
+
+int main(void)
+   {
+		     _printf("let's print something using our function!");
+
+   return (0);
+    }
+
+.B Compilation:
+	   $ gcc *.c -o
+
+.B Output:
+let's print something using our function!
+
+.SH Return Value
 In case of success _printf returns an integer value, wich is the total number of printed characters.
 Otherwise, _printf returns -1 (error).
 
